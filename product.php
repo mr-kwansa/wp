@@ -84,7 +84,6 @@ if(isset($_POST["createProduct"])){
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
-    // $insert_query=mysqli_query($conn,'INSERT INTO products (product_id, product_name, product_photo, item_price, product_info)VALUES ("product_id","product_name", "product_info", "item_price", "product_photo")') or die("Create Item Operation Failed");
 
     if($stmt){
         move_uploaded_file($product_image_temp_name,$product_image_folder);
